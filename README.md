@@ -42,25 +42,25 @@ cd
 mkdir KondrashovB
 cd KondrashovB
 sudo apt-get update -y
-sudo apt install git -y
+sudo apt-get install git -y
 git --version
 sudo apt-get update -y
 git clone https://github.com/Tuburni/luxoft
-cd ~/luxoft/
+cd ~/KondrashovB/luxoft/
 ```
 
 2. Enter your AWS credentials in variables.tf:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
-nano ~/globalLogic_Homework_KondrashovBorys/task3_IntorductionToAWS/modules/variable.tf
+nano ~/KondrashovB/luxoft/variable.tf
 ```
 
-3. Run bash script `install.sh` to install terraform:
+3. Run bash script `install.sh` to install Terraform and Ansible:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 bash install.sh
 ```
-4. Run bash script `setup.sh` to setup Moodle on AWS:
+4. Run bash script `setup.sh` to setup Grafana in Docker on AWS:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 bash setup.sh
