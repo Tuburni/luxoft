@@ -12,8 +12,8 @@ echo ---------------------------------------------------------------------------
 
 sudo apt-get update -y
 wget https://releases.hashicorp.com/terraform/1.2.5/terraform_1.2.5_linux_amd64.zip
-sudo apt-add-repository ppa:ansible/ansible
-sudo apt install ansible
+sudo apt-add-repository ppa:ansible/ansible -y
+sudo apt install ansible -y
 sudo apt install zip -y
 sudo unzip terraform_1.2.5_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
