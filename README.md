@@ -49,6 +49,7 @@ cd ~/KondrashovB/luxoft/
 ```bash
 ssh-keygen 
 ```
+>  <sub> _just press enter until you create the key_ </sub>
 
 4. [Create and copy access key and secret key in AWS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
 
