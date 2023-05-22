@@ -74,12 +74,12 @@ bash setup.sh
 
 ### To get started with Ansible, you'll need:
 
-7. Paste IP address of the VM (for example 3.75.84.92 ) that you got when you created VM with terraform to `inventory.ini` file.
+9. Paste IP address of the VM (for example 3.75.84.92 ) that you got when you created VM with terraform to `inventory.ini` file.
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 nano ~/KondrashovB/luxoft/inventory.ini
 ```
-8. Run ansible script that will install Prometheus in a docker container:
+10. Run ansible script that will install Prometheus in a docker container:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 ansible-playbook -i inventory.ini prometheus.yml
