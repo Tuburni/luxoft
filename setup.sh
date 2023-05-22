@@ -29,5 +29,5 @@ terraform apply -auto-approve
 # ------------------------------------------------------------------------------------------------
 
 echo ---------------------------------------------------------------------------------------------
-echo    !Noticed that moodle need some time to setup, please, just wait :D!
+echo    !Noticed that server need some time to setup, please, just wait :D!
 echo ---------------------------------------------------------------------------------------------
