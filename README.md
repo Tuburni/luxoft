@@ -27,7 +27,7 @@
     
 ### To get started, you'll need ( complete by [Borys Kondrashov](https://github.com/Tuburni)):
 
-1. Register on AWS 
+1. [Register on AWS](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 2. Create and copy credentials, like:
   region     = "eu-central-1"  # Replace with your desired AWS region
   access_key = "put here your access key"
