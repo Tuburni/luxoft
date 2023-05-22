@@ -70,7 +70,7 @@ bash install.sh
 ```bash
 bash setup.sh
 ```
-8. You will be given a link to the server with grafana
+8. You will be given a link to the server with grafana like http://3.75.84.92:3000/login
 
 ### To get started with Ansible, you'll need:
 
