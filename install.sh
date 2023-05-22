@@ -18,6 +18,7 @@ sudo apt install zip -y
 sudo unzip terraform_1.2.5_linux_amd64.zip
 sudo mv terraform /usr/local/bin/
 terraform --version
+ansible --version
 
 echo ---------------------------------------------------------------------------------------------
 echo    Congradulation, Terraform and Ansible was sucesfully instaled
