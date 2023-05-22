@@ -74,12 +74,16 @@ bash setup.sh
 
 ### To get started with Ansible, you'll need:
 
-7. Run bash script `setup_ansible.sh` to setup with Ansible Prometeus in Docker on AWS:
+7. Paste IP address of the VM (for example 3.75.84.92 ) that you got when you created VM with terraform to `inventory.ini` file.
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
-bash setup_ansible.sh
+nano ~/KondrashovB/luxoft/inventory.ini
 ```
-
+8. Run ansible script that will install Prometheus in a docker container:
+>  <sub> _copy and past this comand to terminal_ </sub>
+```bash
+ansible-playbook -i inventory.ini prometheus.yml
+```
 
 ### Useful links:
 1. [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
