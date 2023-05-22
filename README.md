@@ -28,14 +28,8 @@
 ### To get started, you'll need ( complete by [Borys Kondrashov](https://github.com/Tuburni)):
 
 1. [Register on AWS](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
-2. Create and copy credentials, like:
-  region     = "eu-central-1"  # Replace with your desired AWS region
-  access_key = "put here your access key"
-  secret_key = "put here your secret code"
-3. Install Terraform
-4. Install Ansible 
 
-1. Install GIT and clone this repository:
+2. Install GIT and clone this repository:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 cd
@@ -49,7 +43,7 @@ git clone https://github.com/Tuburni/luxoft
 cd ~/KondrashovB/luxoft/
 ```
 
-2. Enter your AWS credentials in variables.tf:
+3. Enter your AWS credentials in variables.tf:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 nano ~/KondrashovB/luxoft/variable.tf
