@@ -51,13 +51,13 @@ ssh-keygen
 ```
 >  <sub> _just press enter until you create the key_ </sub>
 
-4. [Create and copy access key and secret key in AWS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
-
-5. Enter your `AWS access key` and `AWS secret key` in `variables.tf`:
+4. Enter your `AWS access key` and `AWS secret key` in `variables.tf`:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 nano ~/KondrashovB/luxoft/variables.tf
 ```
+
+5. [Create and copy access key and secret key in AWS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
 
 6. Run bash script `install.sh` to install Terraform and Ansible:
 >  <sub> _copy and past this comand to terminal_ </sub>
