@@ -56,7 +56,7 @@ ssh-keygen
 5. Enter your `AWS access key` and `AWS secret key` in `variables.tf`:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
-nano ~/KondrashovB/luxoft/variable.tf
+nano ~/KondrashovB/luxoft/variables.tf
 ```
 
 6. Run bash script `install.sh` to install Terraform and Ansible:
