@@ -42,21 +42,29 @@ sudo apt-get update -y
 git clone https://github.com/Tuburni/luxoft
 cd ~/KondrashovB/luxoft/
 ```
-3. [Create and copy access key and secret key in AWS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
 
-4. Enter your AWS access key and AWS secret key in variables.tf:
+3. [Set Up SSH key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04):
+
+>  <sub> _copy and past this comand to terminal_ </sub>
+```bash
+ssh-keygen 
+```
+
+4. [Create and copy access key and secret key in AWS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
+
+5. Enter your `AWS access key` and `AWS secret key` in `variables.tf`:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 nano ~/KondrashovB/luxoft/variable.tf
 ```
 
-5. Run bash script `install.sh` to install Terraform and Ansible:
+6. Run bash script `install.sh` to install Terraform and Ansible:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 bash install.sh
 ```
 
-6. Run bash script `setup.sh` to setup Grafana in Docker on AWS:
+7. Run bash script `setup.sh` to setup Grafana in Docker on AWS:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 bash setup.sh
