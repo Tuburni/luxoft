@@ -27,7 +27,7 @@
     
 ### To get started, you'll need ( complete by [Borys Kondrashov](https://github.com/Tuburni)):
 
-1. [Register on AWS](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
+1. [Register on AWS](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html).
 
 2. Install GIT and clone this repository:
 >  <sub> _copy and past this comand to terminal_ </sub>
@@ -42,19 +42,21 @@ sudo apt-get update -y
 git clone https://github.com/Tuburni/luxoft
 cd ~/KondrashovB/luxoft/
 ```
+3. [Create and copy access key and secret key in AWS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
 
-3. Enter your AWS credentials in variables.tf:
+4. Enter your AWS access key and AWS secret key in variables.tf:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 nano ~/KondrashovB/luxoft/variable.tf
 ```
 
-3. Run bash script `install.sh` to install Terraform and Ansible:
+5. Run bash script `install.sh` to install Terraform and Ansible:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 bash install.sh
 ```
-4. Run bash script `setup.sh` to setup Grafana in Docker on AWS:
+
+6. Run bash script `setup.sh` to setup Grafana in Docker on AWS:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 bash setup.sh
@@ -64,3 +66,5 @@ bash setup.sh
 ### Useful links:
 1. [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 2. [Create EC2 instance](https://www.guru99.com/creating-amazon-ec2-instance.html)
+3. [Createaccess key and secret key in AWS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html).
+
