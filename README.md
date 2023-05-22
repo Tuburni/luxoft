@@ -84,8 +84,11 @@ nano ~/KondrashovB/luxoft/inventory.ini
 ```bash
 ansible-playbook -i inventory.ini prometheus.yml
 ```
+>  <sub> _just wire yes when ansible will ask "Are you sure you want to continue connecting (yes/no/[fingerprint])?"_ </sub>
 
-11. To check that Prometeus is working go to the this link http://<Your IP adress>:9100/metrcis
+
+
+11. To check that Prometeus is working go to the this link http://<Your IP adress>:9090/graph, like http://3.64.57.197:9090/graph
 
 ### Useful links:
 1. [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
