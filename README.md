@@ -18,7 +18,7 @@
 - Make use of varibales;
 - Make use of outputs.
 
-## Optional:
+### Optional:
 
 - [X] Make use of _Ansible_ playbooks for configuration management;
 - [X] Add custom _Grafana_ dashboards to observe specific metrics.
