@@ -85,6 +85,8 @@ nano ~/KondrashovB/luxoft/inventory.ini
 ansible-playbook -i inventory.ini prometheus.yml
 ```
 
+11. To check that Prometeus is working go to the this link http://<Your IP adress>:9100/metrcis
+
 ### Useful links:
 1. [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html)
 2. [Create EC2 instance](https://www.guru99.com/creating-amazon-ec2-instance.html)
