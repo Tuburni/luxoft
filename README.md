@@ -51,7 +51,7 @@ ssh-keygen
 ```
 >  <sub> _just press enter until you create the key_ </sub>
 
-4. Enter your `AWS access key` and `AWS secret key` in `variables.tf`:
+4. Open in text editor `variables.tf` to enter your `AWS access key` and `AWS secret key`:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 nano ~/KondrashovB/luxoft/variables.tf
