@@ -1,0 +1,20 @@
+---
+- name: Configure Grafana
+  hosts: slave
+  gather_facts: false
+
+  tasks:
+    - name: Copy custom dashboards
+      copy:
+        src: "~/tfproj/yesoreyeram-boomtheme-panel"
+        dest: "/tmp/custom_dashboards"
+      delegate_to: "{{ inventory_hostname }}"
+
+    - name: Copy dashboards to Grafana directory
+      command: docker cp /tmp/custom_dashboards/. grafana:/var/lib/grafana/dashboards/
+      delegate_to: "{{ inventory_hostname }}"
+
+    - name: Restart Grafana container
+      command: docker restart grafana
+      delegate_to: "{{ inventory_hostname }}"
+
