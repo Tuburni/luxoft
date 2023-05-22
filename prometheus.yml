@@ -1,0 +1,24 @@
+---
+- hosts: slave
+  become: true
+  tasks:
+    - name: Start Prometheus Docker container
+      docker_container:
+        name: prometheus
+        image: prom/prometheus
+        ports:
+          - "9090:9090"
+        restart_policy: always
+
+    - name: Install node-exporter on slave machine
+      become: true
+      apt:
+        name: prometheus-node-exporter
+        state: present
+
+    - name: Start node-exporter service
+      become: true
+      service:
+        name: prometheus-node-exporter
+        state: started
+        enabled: true
