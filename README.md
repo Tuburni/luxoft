@@ -25,10 +25,10 @@
 
 ##
     
-### To get started, you'll need ( complete by [Borys Kondrashov](https://github.com/Tuburni)):
+### To get started with terraform, you'll need ( complete by [Borys Kondrashov](https://github.com/Tuburni)):
 
 1. [Register on AWS](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html).
-
+ 
 2. Install GIT and clone this repository:
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
@@ -69,6 +69,15 @@ bash install.sh
 >  <sub> _copy and past this comand to terminal_ </sub>
 ```bash
 bash setup.sh
+```
+8. You will be given a link to the server with grafana
+
+### To get started with Ansible, you'll need:
+
+7. Run bash script `setup_ansible.sh` to setup with Ansible Prometeus in Docker on AWS:
+>  <sub> _copy and past this comand to terminal_ </sub>
+```bash
+bash setup_ansible.sh
 ```
 
 
