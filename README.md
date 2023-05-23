@@ -84,7 +84,7 @@ nano ~/KondrashovB/luxoft/inventory.ini
 ```bash
 ansible-playbook -i inventory.ini prometheus.yml
 ```
->  <sub> _just wire yes when ansible will ask "Are you sure you want to continue connecting (yes/no/[fingerprint])?"_ </sub>
+>  <sub> _just write yes when ansible will ask "Are you sure you want to continue connecting (yes/no/[fingerprint])?"_ </sub>
 
 
 
