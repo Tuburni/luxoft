@@ -6,21 +6,21 @@ resource "aws_key_pair" "ssh_key" {
   name        = "grafana-security-group"
   description = "Security group for Grafana"
 
-  dynamic "ingress" {
+dynamic "ingress" {
     for_each = {
-      "http"  = { from_port = 80, to_port = 80, protocol = "tcp",  cidr_blocks = ["0.0.0.0/0"] },
-      "grafana"  = { from_port = 3000, to_port = 3000, protocol = "tcp",  cidr_blocks = ["0.0.0.0/0"] },
-      "prometheus"  = { from_port = 9100, to_port = 9100, protocol = "tcp",  cidr_blocks = ["0.0.0.0/0"] },
-      "prometheus_ui"  = { from_port = 9090, to_port = 9090, protocol = "tcp",  cidr_blocks = ["0.0.0.0/0"] },
-      "https" = { from_port = 443, to_port = 443, protocol = "tcp", cidr_blocks = ["0.0.0.0/0"] },
-      "ssh"   = { from_port = 22, to_port = 22, protocol = "tcp", cidr_blocks = ["0.0.0.0/0"] },
+      "http"  = { from_port = 80, to_port = 80 },
+      "grafana"  = { from_port = 3000, to_port = 3000 },
+      "prometheus"  = { from_port = 9100, to_port = 9100 },
+      "prometheus_ui"  = { from_port = 9090, to_port = 9090 },
+      "https" = { from_port = 443, to_port = 443 },
+      "ssh"   = { from_port = 22, to_port = 22 },
     }
 
     content {
       from_port   = ingress.value.from_port
       to_port     = ingress.value.to_port
-      protocol    = ingress.value.protocol
-      cidr_blocks = ingress.value.cidr_blocks
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
     }
   }
 
